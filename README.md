@@ -32,5 +32,6 @@ user: A string representing the user's name.
 ResponseEntity<String>: For success messages from user activation/deactivation.
 ResponseEntity<WeatherInfo>: For weather information.
 ResponseEntity<List<Weather>>: For weather history.
-Usage
+
+# Usage
 To use this API, you can send HTTP requests to the specified endpoints using tools like Postman, curl, or your preferred HTTP client. For example, to activate a user with ID MAX, you would send a PUT request to /api/users/MAX/activate.
