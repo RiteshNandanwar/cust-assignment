@@ -19,8 +19,7 @@ WeatherController:
 WeatherHistoryController: 
 	/app/history (GET): Retrieves weather history based on postalCode or user query parameters.
 
-#Request and Response Formats
-#Request Parameters:
+# Request Parameters:
 
 userId: A string representing the user's ID.
 zipCode: A long representing the zip code.
@@ -28,7 +27,7 @@ userName: A string representing the user's name.
 postalCode: A string representing the postal code.
 user: A string representing the user's name.
 
-#Response Formats:
+# Response Formats:
 
 ResponseEntity<String>: For success messages from user activation/deactivation.
 ResponseEntity<WeatherInfo>: For weather information.
