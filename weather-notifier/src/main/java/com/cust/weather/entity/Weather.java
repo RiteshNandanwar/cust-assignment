@@ -8,6 +8,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+/**
+ * 
+ */
 @Entity
 public class Weather {
 
@@ -44,6 +47,9 @@ public class Weather {
 	
 	@Column
 	private Date updateDate;
+	
+	@Column
+	private Date username;
 
 	public Weather() {
 		super();
@@ -144,4 +150,21 @@ public class Weather {
 	public void setVisibility(int visibility) {
 		this.visibility = visibility;
 	}
+
+	public Date getUpdateDate() {
+		return updateDate;
+	}
+
+	public void setUpdateDate(Date updateDate) {
+		this.updateDate = updateDate;
+	}
+
+	public Date getUsername() {
+		return username;
+	}
+
+	public void setUsername(Date username) {
+		this.username = username;
+	}
+	
 }
